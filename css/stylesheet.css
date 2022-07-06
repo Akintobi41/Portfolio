@@ -63,20 +63,16 @@ header{
 }
 .menu-toggle.active{
     background-color: transparent;
-    /* height: 0; */
-    /* z-index: 2; */
     animation: spin .9s linear 1;
 }
 .menu-toggle.active::before{ 
    transform: translateY(0) rotate(45deg);
    width: 1.8rem;
-   /* z-index: 2; */
  }
 
 .menu-toggle.active::after{ 
     transform: translateY(0) rotate(-45deg);
     width: 1.8rem;
-    /* z-index: 2; */
 }
 .navigation li { 
     transition: all 2s;
@@ -95,13 +91,11 @@ header{
     color: #EEEEEE;
     font-size: 1.2rem;
    border-top: solid 1px #787A91;
-   /* transition: all 4.2s; */
    z-index: 1;
 }
 .navigation.active li { 
     display: inline-block;
     margin-top: 1.5rem;
-    transition: all 5.8s;
     cursor: pointer;
 }
 .navigation.active li a { 
@@ -112,7 +106,7 @@ header{
 .navigation.active li a:hover{ 
     color: #2FA4FF;
 }
-@keyframes spin {
+/* @keyframes spin {
     
     from{ 
         transform: rotateX(0deg);
@@ -120,11 +114,10 @@ header{
     to{ 
         transform: rotateX(180deg);
     }
-}
+} */
 .logo-text{ 
     font-size: 2.5rem;
     letter-spacing: -3px;
-    /* color: #EEEEEE; */
     font-style: italic;
     font-weight: 900;
 }
@@ -176,10 +169,7 @@ a{
 .socials img{ 
     width: 2rem;
     height: 2rem;
-    /* filter: opacity(.2) drop-shadow(0 0 0 #eee); */
     filter: opacity(.4) drop-shadow(0 0 0 rgb(51, 87, 134));
-
-    /* background-color: ; */
 }
 
 .logo-1,.logo-2,.logo-3,.logo-4{ 
@@ -214,8 +204,6 @@ footer p {
 } 
 .avatar-img{ 
     width: 18rem;
-    /* height: 100%; */
-   /* border-radius: 70%; */
    filter: grayscale(100%);
 }
 footer p{ 
@@ -244,12 +232,10 @@ footer p{
     }
     .navigation li a { 
         text-decoration: none;
-        /* color: #2c2e2f; */
         color: #141E61;
         font-weight: bold;
         font-size: 1.1rem;
     padding-bottom: .7rem;
-    /* transition: all ease-out .3s; */
     }
     .navigation li a:hover{ 
         border-bottom: solid 1.5px #2c2e2f
