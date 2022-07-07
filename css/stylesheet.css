@@ -9,8 +9,6 @@ body{
     margin: auto;
     max-width: 1500px;
     position: relative;
-    /* height: 100vh; */
-    /* overflow: hidden; */
 }
 header{ 
     position: fixed;
@@ -106,15 +104,6 @@ header{
 .navigation.active li a:hover{ 
     color: #2FA4FF;
 }
-/* @keyframes spin {
-    
-    from{ 
-        transform: rotateX(0deg);
-    }
-    to{ 
-        transform: rotateX(180deg);
-    }
-} */
 .logo-text{ 
     font-size: 2.5rem;
     letter-spacing: -3px;
@@ -159,6 +148,10 @@ a{
 }
 .about p { 
     line-height: 25px;
+    max-width: 37.5rem;
+}
+.section-bold{ 
+    font-weight: 400;
 }
 .socials{ 
     margin:1rem 0;
