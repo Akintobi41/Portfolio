@@ -124,7 +124,7 @@ a {
   cursor: pointer;
 }
 main {
-  height: 30rem;
+  height: 32rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -172,8 +172,15 @@ textarea:focus {
 }
 .socials {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.socials p{ 
+  font-size: 1.5rem;
+}
+.socials section{ 
+  display: flex;
 }
 .socials img {
   width: 2rem;
