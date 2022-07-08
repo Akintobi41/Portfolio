@@ -224,6 +224,10 @@ button{
   border: solid 1px #141e61;
   cursor: pointer;
 }
+footer p { 
+  text-align: center;
+  margin: 1rem 0;
+}
 
 
 @media screen and (min-width: 767px) {
