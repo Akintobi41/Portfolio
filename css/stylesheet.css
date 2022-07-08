@@ -72,10 +72,7 @@ header{
     transform: translateY(0) rotate(-45deg);
     width: 1.8rem;
 }
-.navigation li { 
-    transition: all 2s;
-    transition-delay:2s;
-}
+
 .navigation.active{ 
     position: fixed;
     display: flex;
@@ -133,8 +130,7 @@ a{
     }
  .main-section p { 
   line-height: 22px;
-  letter-spacing: 1px;
-  font-size: .9rem;
+  font-size: 1.2rem;
   color: #2c2e2f;
   text-align: center;
 }
@@ -149,9 +145,10 @@ a{
 .about p { 
     line-height: 25px;
     max-width: 37.5rem;
+    font-size: 1.1rem;
 }
 .section-bold{ 
-    font-weight: 400;
+    font-weight: bold;
 }
 .socials{ 
     margin:1rem 0;
@@ -203,42 +200,38 @@ footer p{
  margin-bottom: .5rem;
 }
 
-
-@media screen and (min-width:576px) {
-   header{ 
-       position: relative;
-       background-color: transparent;
-       padding:0.8rem 1.5rem;
-    }
-    .logo-link{ 
-        color: #141E61;
-        font-size: 3rem;
-    }
-    .hamburger-menu{ 
-        display: none;
-    }
-    .navigation{ 
-        display: flex;
-    }
-    .navigation li {
-        margin-left: 2rem;
-    }
-    .navigation li a { 
-        text-decoration: none;
-        color: #141E61;
-        font-weight: bold;
-        font-size: 1.1rem;
-    padding-bottom: .7rem;
-    }
-    .navigation li a:hover{ 
-        border-bottom: solid 1.5px #2c2e2f
-    }
-    .main-section{ 
-        margin-top: 0;
-    }
-    
-}
 @media screen and (min-width:767px) {
+    header{ 
+        position: relative;
+        background-color: transparent;
+        padding:0.8rem 1.5rem;
+     }
+     .logo-link{ 
+         color: #141E61;
+         font-size: 3rem;
+     }
+     .hamburger-menu{ 
+         display: none;
+     }
+     .navigation{ 
+         display: flex;
+     }
+     .navigation li {
+         margin-left: 2rem;
+     }
+     .navigation li a { 
+         text-decoration: none;
+         color: #141E61;
+         font-weight: bold;
+         font-size: 1.1rem;
+         padding-bottom: .7rem;
+     }
+     .navigation li a:hover{ 
+         border-bottom: solid 1.5px #2c2e2f
+     }
+     .main-section{ 
+         margin-top: 0;
+     }
     .main-section h2{ 
         font-size: 4rem;
     }
