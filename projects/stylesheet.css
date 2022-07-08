@@ -12,7 +12,8 @@ body {
   min-height: 100vh;
 }
 h2 {
-  margin-top: 6rem;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
   text-align: center;
   color: #141e61;
 }
@@ -138,7 +139,7 @@ section img {
   align-self: center;
 }
 section p {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: 1.2rem;
   color: #141e61;
 }
@@ -153,16 +154,16 @@ section .summary {
   flex-direction: column;
   margin-bottom: 1rem;
   padding: 1rem;
-  width: 15rem;
+  /* width: 15rem; */
 }
 .project-2 {
   display: flex;
   flex-direction: column;
 }
-aside {
+/* aside {
   display: flex;
   justify-content: space-between;
-}
+} */
 button {
   align-self: center;
   width: 5rem;
@@ -208,7 +209,7 @@ button {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 .hvr-bounce-to-right {
-  margin-right: 1rem;
+  margin-left: .5rem;
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
@@ -256,7 +257,7 @@ button {
 .project-3 {
   margin-bottom: 1rem;
   padding: 1rem;
-  width: 15rem;
+  /* width: 15rem; */
 }
 footer p {
   margin: 1rem 0;
@@ -265,7 +266,7 @@ footer p {
 }
 
 @media screen and (min-width: 576px) {
-  header {
+  /* header {
     position: relative;
     background-color: transparent;
     padding: 0.8rem 1.5rem;
@@ -319,27 +320,87 @@ footer p {
   .project-2,
   .project-3 {
     width: 40%;
-  }
+  } */
 
-  section .summary-3 {
+  /* section .summary-3 {
     height: 4rem;
-  }
+  } */
 }
 
-@media screen and (min-width: 635px) {
+/* @media screen and (min-width: 635px) {
   section .summary {
     height: 10rem;
   }
-}
-@media screen and (min-width: 736px) {
-  section .summary {
-    height: 8rem;
+} */
+
+@media screen and (min-width: 767px) {
+  header {
+    position: relative;
+    background-color: transparent;
+    padding: 0.8rem 1.5rem;
   }
+  h2 {
+    font-size: 2.5rem;
+    margin: 2rem 3rem;
+  }
+  .logo-link {
+    color: #141e61;
+    font-size: 3rem;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    margin-left: 2rem;
+  }
+  .navigation li a {
+    text-decoration: none;
+    color: #141e61;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0.7rem;
+  }
+  .navigation li a:hover {
+    border-bottom: solid 1.5px #2c2e2f;
+  }
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    max-width: 1300px;
+    margin: auto;
+  }
+  aside {
+    justify-content: center;
+  }
+  section .summary {
+    height: 7.5rem;
+  }
+  section .summary-3{ 
+    height: 3rem;
+  }
+
+  .project-1,
+  .project-2,
+  .project-3 {
+    width: 45%;
+  }
+
+  /* section .summary-3 {
+    height: 4rem;
+  } */
+  
 }
 
 @media screen and (min-width: 990px) {
   section .summary {
     height: 5.5rem;
+  }
+  section .summary-3{ 
+    height: 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
