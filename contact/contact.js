@@ -18,24 +18,3 @@ function closeMenu(e){
 }
 
 
-
-  let form = document.querySelector('form');
-  let email = document.querySelector('.mail');
-  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-  form.addEventListener('submit',sendEmail)
-
-  function sendEmail(e){ 
-
-      e.preventDefault();
-   
-    // e.preventDefault();
-    if(email.value.match(pattern)){ 
-     console.log("goodd")     
-    }
-    else{ 
-         console.log("bad")
-
-    }
-
-  }
