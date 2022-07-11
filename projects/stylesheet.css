@@ -209,7 +209,7 @@ button {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 .hvr-bounce-to-right {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
@@ -379,7 +379,7 @@ footer p {
   section .summary {
     height: 7.5rem;
   }
-  section .summary-3{ 
+  section .summary-3 {
     height: 3rem;
   }
 
@@ -392,14 +392,13 @@ footer p {
   /* section .summary-3 {
     height: 4rem;
   } */
-  
 }
 
 @media screen and (min-width: 990px) {
   section .summary {
     height: 5.5rem;
   }
-  section .summary-3{ 
+  section .summary-3 {
     height: 3rem;
   }
 }
