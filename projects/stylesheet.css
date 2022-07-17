@@ -154,16 +154,12 @@ section .summary {
   flex-direction: column;
   margin-bottom: 1rem;
   padding: 1rem;
-  /* width: 15rem; */
 }
 .project-2 {
   display: flex;
   flex-direction: column;
 }
-/* aside {
-  display: flex;
-  justify-content: space-between;
-} */
+
 button {
   align-self: center;
   width: 5rem;
@@ -320,10 +316,6 @@ footer p {
   .project-3 {
     width: 45%;
   }
-
-  /* section .summary-3 {
-    height: 4rem;
-  } */
 }
 
 @media screen and (min-width: 990px) {
