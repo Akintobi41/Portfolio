@@ -15,4 +15,4 @@ function closeMenu(e) {
         navigation.classList.remove('active');
         hamburger.classList.remove('active');
     }
-}g
+}
