@@ -321,6 +321,7 @@ footer p {
   }
   section .summary {
     height: 7.5rem;
+    letter-spacing: 0.04rem;
   }
   section .summary-3 {
     height: 3rem;
