@@ -1,20 +1,24 @@
 let menuToggle = document.querySelector('.hamburger-menu');
 let hamburger = document.querySelector('.menu-toggle');
 let navigation = document.querySelector('.navigation');
- 
+
 
 menuToggle.addEventListener('click', function (e) {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active');
 });
 
-document.body.addEventListener('click',closeMenu)
+document.body.addEventListener('click', closeMenu)
 
-function closeMenu(e){
-    if(e.target !== hamburger && e.target !== menuToggle){ 
+function closeMenu(e) {
+    if (e.target !== hamburger && e.target !== menuToggle) {
         navigation.classList.remove('active');
         hamburger.classList.remove('active');
-    } 
+    }
 }
+let year = new Date().getFullYear()
+
+let footer_text = document.querySelector('footer p')
+footer_text.textContent += ` ${year}`
 
 

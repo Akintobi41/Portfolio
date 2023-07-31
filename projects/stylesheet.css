@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+
 body {
   position: relative;
   background-color: #eeeeee;
@@ -11,12 +12,14 @@ body {
   max-width: 1500px;
   min-height: 100vh;
 }
+
 h2 {
   margin-top: 10rem;
   margin-bottom: 1rem;
   text-align: center;
   color: #141e61;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -29,9 +32,11 @@ header {
   padding: 0.8rem 1rem;
   z-index: 3;
 }
+
 .navigation {
   display: none;
 }
+
 .navigation li {
   list-style-type: none;
 }
@@ -44,11 +49,13 @@ header {
   align-items: center;
   cursor: pointer;
 }
+
 .menu-toggle {
   width: 1.1rem;
   height: 0.15rem;
   background-color: #eeeeee;
 }
+
 .menu-toggle::before {
   content: "";
   position: absolute;
@@ -68,10 +75,12 @@ header {
   transform: translateY(10px);
   transition: 0.8s;
 }
+
 .menu-toggle.active {
   background-color: transparent;
   animation: spin 0.9s linear 1;
 }
+
 .menu-toggle.active::before {
   transform: translateY(0) rotate(45deg);
   width: 1.8rem;
@@ -97,54 +106,60 @@ header {
   border-top: solid 1px #787a91;
   z-index: 1;
 }
+
 .navigation.active li {
   display: inline-block;
   margin-top: 1.5rem;
   cursor: pointer;
 }
+
 .navigation.active li a {
   color: #eeeeee;
   text-decoration: none;
   cursor: pointer;
 }
+
 .navigation.active li a:hover {
   color: #2fa4ff;
 }
+
 .logo-text {
   font-size: 2.5rem;
   letter-spacing: -3px;
   font-style: italic;
   font-weight: 900;
 }
+
 .logo-link {
   text-decoration: none;
   color: #eeeeee;
   user-select: none;
 }
+
 a {
   cursor: pointer;
 }
+
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 1rem;
 }
+
 section img {
   width: 100%;
-  align-self: center;
-  background-color: #2c2e2f;
-  height: 100%;
+  background-color: #11648d;
   border-radius: 5px;
 }
+
 section p {
   margin-top: 1rem;
   font-size: 1.2rem;
   color: #141e61;
 }
+
 section .summary {
   margin: 0.5rem 0;
   font-size: 0.8rem;
@@ -152,18 +167,23 @@ section .summary {
   color: #2c2e2f;
   width: 100%;
   max-width: 450px;
-}
-.project-1 {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-.project-2 {
-  display: flex;
-  flex-direction: column;
+  height: 4rem;
+  overflow-y: auto;
+
 }
 
-button {
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside {
+  margin-bottom: 1rem;
+}
+
+.hvr-bounce-to-left,
+.hvr-bounce-to-right {
   align-self: center;
   width: 5rem;
   height: 1.5rem;
@@ -196,22 +216,23 @@ button {
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
+
 .hvr-bounce-to-left:hover,
 .hvr-bounce-to-left:focus,
 .hvr-bounce-to-left:active {
   color: white;
 }
+
 .hvr-bounce-to-left:hover:before,
 .hvr-bounce-to-left:focus:before,
 .hvr-bounce-to-left:active:before {
   transform: scaleX(1);
-  transition-timing-function: cubic-bezier(
-    0.52,
-    1.64,
-    0.37,
-    0.66
-  );
+  transition-timing-function: cubic-bezier(0.52,
+      1.64,
+      0.37,
+      0.66);
 }
+
 .hvr-bounce-to-right {
   margin-left: 0.5rem;
   display: inline-block;
@@ -222,6 +243,7 @@ button {
   transition-property: color;
   transition-duration: 0.5s;
 }
+
 .hvr-bounce-to-right:before {
   content: "";
   position: absolute;
@@ -237,54 +259,86 @@ button {
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
+
 .hvr-bounce-to-right:hover,
 .hvr-bounce-to-right:focus,
 .hvr-bounce-to-right:active {
   color: white;
 }
+
 .hvr-bounce-to-right:hover:before,
 .hvr-bounce-to-right:focus:before,
 .hvr-bounce-to-right:active:before {
   transform: scaleX(1);
-  transition-timing-function: cubic-bezier(
-    0.52,
-    1.64,
-    0.37,
-    0.66
-  );
+  transition-timing-function: cubic-bezier(0.52,
+      1.64,
+      0.37,
+      0.66);
 }
+
 .hvr-bounce-to-right a,
 .hvr-bounce-to-left a {
   text-decoration: none;
   color: #2c2e2f;
 }
+
 .hvr-bounce-to-right:hover a,
 .hvr-bounce-to-left:hover a {
   color: #eeeeee;
 }
-.project-2,
-.project-3 {
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
+
 footer p {
   margin: 1rem 0;
   text-align: center;
   color: #2c2e2f;
 }
-.picture-1-wrapper,
-.picture-2-wrapper,
-.picture-3-wrapper {
-  width: 100%;
+
+.pictures-wrapper {
   max-width: 450px;
-  height: 16rem;
-}
-.picture-1,
-.picture-2,
-.picture-3 {
-  height: 100%;
+  width: 100%;
   border-radius: 10px;
-  background-color: red;
+  background-color: #eeeeee;
+  border: solid 1px gainsboro;
+
+}
+
+.pictures {
+  display: flex;
+  /* width: 100%; */
+  /* height: 100%; */
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  width: 2.3rem;
+  height: 2rem;
+  font-size: 0.8rem;
+  color: rgb(84 79 79);
+  font-weight: 700;
+  margin: 0 0.3rem;
+  opacity: 0.9;
+  background: rgb(255 255 255 / 90%);
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #9b9b9b;
+  border-radius: 3px;
+}
+
+.pagination .previous-button {
+  background: rgb(255 255 255 / 61%);
+  cursor: not-allowed;
+}
+
+.pagination .next-button {
+  background: rgb(255 255 255 / 61%);
+  cursor: not-allowed;
 }
 
 @media screen and (min-width: 767px) {
@@ -293,6 +347,7 @@ footer p {
     background-color: transparent;
     padding: 0.8rem 3rem;
   }
+
   .navigation li a:hover:after {
     display: flex;
     content: "";
@@ -308,26 +363,33 @@ footer p {
   .navigation li a:hover {
     color: #2c2e2f;
   }
+
   .navigation li a:active {
     color: #141e61;
   }
+
   h2 {
     font-size: 2.5rem;
     margin: 2rem 3rem;
   }
+
   .logo-link {
     color: #141e61;
     font-size: 3rem;
   }
+
   .hamburger-menu {
     display: none;
   }
+
   .navigation {
     display: flex;
   }
+
   .navigation li {
     margin-left: 2rem;
   }
+
   .navigation li a {
     text-decoration: none;
     color: #141e61;
@@ -335,44 +397,29 @@ footer p {
     font-size: 1.1rem;
     padding-bottom: 0.7rem;
   }
+
   main {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     max-width: 1300px;
     margin: auto;
+    gap: 0 1.5rem;
   }
+
   aside {
     justify-content: center;
   }
+
   section .summary {
-    height: 7.5rem;
     letter-spacing: 0.04rem;
   }
-  section .summary-3 {
-    height: 3rem;
-  }
 
-  .project-1,
-  .project-2,
-  .project-3 {
+  .projects {
     width: 45%;
   }
-}
 
-@media screen and (min-width: 990px) {
-  section .summary {
-    height: 5.5rem;
-  }
-  section .summary-3 {
-    height: 3rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  section .summary {
-    height: 5rem;
-  }
-  section .summary-3 {
-    height: 3rem;
+  .pictures-wrapper {
+    max-width: none;
   }
 }
