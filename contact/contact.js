@@ -1,24 +1,20 @@
-let menuToggle = document.querySelector('.hamburger-menu');
-let hamburger = document.querySelector('.menu-toggle');
-let navigation = document.querySelector('.navigation');
+let menuToggle = document.querySelector('.hamburger-menu'),
+    hamburger = document.querySelector('.menu-toggle'),
+    navigation = document.querySelector('.navigation'),
+    footer_text = document.querySelector('footer p'),
+    year = new Date().getFullYear();
+document.body.addEventListener('click', closeMenu)
 
-
+footer_text.textContent += ` ${year}`
 menuToggle.addEventListener('click', function (e) {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active');
 });
-
-document.body.addEventListener('click', closeMenu)
-
 function closeMenu(e) {
     if (e.target !== hamburger && e.target !== menuToggle) {
         navigation.classList.remove('active');
         hamburger.classList.remove('active');
     }
 }
-let year = new Date().getFullYear()
-
-let footer_text = document.querySelector('footer p')
-footer_text.textContent += ` ${year}`
 
 
