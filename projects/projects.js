@@ -1,14 +1,56 @@
-let menuToggle = document.querySelector('.hamburger-menu');
-let hamburger = document.querySelector('.menu-toggle');
-let navigation = document.querySelector('.navigation');
-let minContent = document.querySelector('.min-content')
-let maxContent = document.querySelector('.max-content');
-let btn_next = document.querySelector('.next')
-let btn_prev = document.querySelector('.previous')
+import { data } from '../contentful.js'
+
+const menuToggle = document.querySelector('.hamburger-menu'),
+    hamburger = document.querySelector('.menu-toggle'),
+    navigation = document.querySelector('.navigation'),
+    minContent = document.querySelector('.min-content'),
+    maxContent = document.querySelector('.max-content'),
+    btn_next = document.querySelector('.next'),
+    btn_prev = document.querySelector('.previous'),
+    projects = document.querySelector('main'),
+    loader = document.querySelector('.loader-container');
+let newData;
+newData = await data();
+if (newData?.length) loader.style.display = 'none';
+
+newData?.forEach((item) => {
+
+    let section1 = document.createElement('section'),
+        pictureWrapper = document.createElement('section'),
+        picture = document.createElement('section'),
+        img = document.createElement('img'),
+        text = document.createElement('p'),
+        summary = document.createElement('p'),
+        aside = document.createElement('aside'),
+        link1 = document.createElement('a'),
+        link2 = document.createElement('a'),
+        btn1 = document.createElement('button'),
+        btn2 = document.createElement('button');
+
+    section1.appendChild(pictureWrapper).classList.add('pictures-wrapper')
+    pictureWrapper.appendChild(picture).classList.add('pictures')
+    section1.appendChild(text)
+    section1.appendChild(summary).classList.add('summary')
+    section1.appendChild(aside)
+    aside.appendChild(link1)
+    aside.appendChild(link2)
+    link1.appendChild(btn1).classList.add('hvr-bounce-to-left')
+    link2.appendChild(btn2).classList.add('hvr-bounce-to-right')
+    projects.appendChild(section1).classList.add('projects')
+
+    text.textContent = item.fields.title
+    picture.style.background = `url("${item.fields.image.fields.file.url}") grey no-repeat`
+    picture.style.backgroundSize = `100% 100%`
+    link1.setAttribute('href', item.fields.liveLink)
+    link2.setAttribute('href', item.fields.githubLink)
+    summary.textContent = item.fields.description
+    btn1.textContent = 'Live'
+    btn2.textContent = 'Repository'
+
+})
 
 const addClass = (el, name) => el.classList.add(name)
 const removeClass = (el, name) => el.classList.remove(name)
-let projects = document.querySelector('main')
 
 let projectsWrapper = [...projects.children]
 

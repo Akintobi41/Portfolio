@@ -45,145 +45,27 @@
       </ul>
     </header>
     <h2>Projects</h2>
-    <main>
-      <section class="projects">
-        <section class="pictures-wrapper">
-          <section class="pictures">
-            <img
-              src="/Images/space-hub.png"
-              loading="lazy"
-            />
-          </section>
-        </section>
-        <p>Space Hub</p>
-        <p class="summary">
-          A multi page space tourism website featuring a
-          homepage, crew page, destination page, technology
-          page and number indicators. This project gives an
-          overview of my learning curve in detail and most
-          of what I've learnt created with HTML, CSS and
-          JavaScript.
-        </p>
-        <aside>
-          <a
-            href="https://myspacehub.netlify.app/index.html"
-            ><button class="hvr-bounce-to-left">
-              Live
-            </button></a
-          >
-          <a href="https://github.com/Akintobi41/Space-Hub">
-            <button class="hvr-bounce-to-right">
-              Repository
-            </button></a
-          >
-        </aside>
-      </section>
-
-      <section class="projects">
-        <section class="pictures-wrapper">
-          <section class="pictures">
-            <img
-              src="/Images/Screenshot from 2022-08-19 23-28-12.png"
-              loading="lazy"
-              class="project-2-image"
-            />
-          </section>
-        </section>
-        <p>Fake Blog Post</p>
-        <p class="summary summary-2">
-          A fully functional fake blog post with editorial
-          features using JSON API to pull the data, built
-          with HTML, CSS and JavaScript.
-        </p>
-        <aside>
-          <a
-            href="https://akin-blog.netlify.app/"
-            target="_blank"
-            ><button class="hvr-bounce-to-left">
-              Live
-            </button></a
-          >
-          <a
-            href="https://github.com/Akintobi41/Fake-Blog-Post"
-            target="_blank"
-          >
-            <button class="hvr-bounce-to-right">
-              Repository
-            </button></a
-          >
-        </aside>
-      </section>
-      <section class="projects">
-        <section class="pictures-wrapper">
-          <section class="pictures">
-            <img
-              src="/Images/currencyconverter.png"
-              loading="lazy"
-            />
-          </section>
-        </section>
-        <p>Currency Converter</p>
-        <p class="summary summary-3">
-          A simple currency converter application showing
-          various functionalities built with HTML, CSS and
-          JavaScript.
-        </p>
-        <aside>
-          <a href="https://currencyexchangerr.netlify.app/"
-            ><button class="hvr-bounce-to-left">
-              Live
-            </button></a
-          >
-          <a
-            href="https://github.com/Akintobi41/Currency-Converter"
-          >
-            <button class="hvr-bounce-to-right">
-              Repository
-            </button></a
-          >
-        </aside>
-      </section>
-       <section class="projects">
-        <section class="pictures-wrapper">
-          <section class="pictures">
-            <img
-              src="/Images/lotr.png"
-              loading="lazy"
-            />
-          </section>
-        </section>
-        <p>Lord of The Rings</p>
-        <p class="summary summary-3">
-          If you love J.R.R. Tolkien's Middle-earth, you'll love this site. I made it using HTML, CSS, and JavaScript, so it looks great on any device.
-        </p>
-        <aside>
-          <a href="https://currencyexchangerr.netlify.app/"
-            ><button class="hvr-bounce-to-left">
-              Live
-            </button></a
-          >
-          <a
-            href="https://github.com/Akintobi41/Currency-Converter"
-          >
-            <button class="hvr-bounce-to-right">
-              Repository
-            </button></a
-          >
-        </aside>
-      </section> 
-
-    </main>
-    <section class="pagination">
-      <button class="min-content"></button
-      ><span>of</span
-      ><button class="max-content"></button
-      ><button class="previous"><</button
-      ><button class="next">&#62;</button>
+    <main></main>
+    <section class="loader-container">
+      <div class="loader"></div>
     </section>
 
     <footer>
-      <p>Akintobi &copy; </p>
+      <section class="pagination">
+        <button class="min-content"></button><span>of</span
+        ><button class="max-content"></button
+        ><button class="previous"><</button
+        ><button class="next">&#62;</button>
+      </section>
+      <p>Akintobi &copy;</p>
     </footer>
-    <script src="/projects/projects.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"
+    ></script>
+    <script
+      src="/projects/projects.js"
+      type="module"
+    ></script>
   </body>
 </html>
